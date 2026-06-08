@@ -24,20 +24,6 @@
 
 ---
 
-## 📋 Tabla de Contenidos
-
-- [Descripción General](#-descripción-general)
-- [Requisitos de Instalación](#-requisitos-de-instalación)
-- [Configuración de la URL del Backend](#-configuración-de-la-url-del-backend)
-- [Usuarios de Prueba](#-usuarios-de-prueba)
-- [Capturas de Pantalla](#-capturas-de-pantalla)
-- [Entidades Implementadas (7)](#-entidades-implementadas-7)
-- [Listado de Pantallas](#-listado-de-pantallas)
-- [Ejemplos de Consumo de la API](#-ejemplos-de-consumo-de-la-api)
-- [Instrucciones para Ejecutar la App](#-instrucciones-para-ejecutar-la-app)
-
----
-
 ## 🚀 Descripción General
 
 **CursosOnline** es una aplicación móvil Android desarrollada en **Kotlin** con **Jetpack Compose** que consume una API REST construida con **Django REST Framework** y **PostgreSQL**.
@@ -45,7 +31,7 @@
 ### Roles de usuario
 
 | Rol | Descripción |
-|------|-------------|
+|---------|--------------|
 | 👑 **Admin** | Acceso total: CRUD de usuarios, cursos, categorías, lecciones, matrículas, progreso y reseñas. Panel de administración con navegación tipo drawer. |
 | 👨‍🏫 **Instructor** | Puede gestionar cursos y lecciones. Acceso al panel admin con restricciones. |
 | 🎓 **Estudiante** | Navega el catálogo, se inscribe a cursos, visualiza lecciones, lleva su progreso automático y deja reseñas. |
@@ -126,47 +112,6 @@ val apiBaseUrl = localProperties.getProperty(
 ├── matriculas/           → CRUD de matrículas
 ├── progresos/            → CRUD de progreso
 ```
-
----
-
-## 👤 Usuarios de Prueba
-
-| Usuario | Contraseña | Rol |
-|---------|-----------|-----|
-| `admin` | `admin123` | 👑 Administrador |
-| `instructor1` | `clave1234` | 👨‍🏫 Instructor |
-| `estudiante1` | `clave1234` | 🎓 Estudiante |
-
----
-
-## 📸 Capturas de Pantalla
-
-> *Agrega aquí las capturas de pantalla de tu aplicación funcionando.*
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>Login</b></td>
-      <td align="center"><b>Catálogo</b></td>
-      <td align="center"><b>Detalle del Curso</b></td>
-    </tr>
-    <tr>
-      <td><img src="screenshots/login.png" width="200" alt="Login"></td>
-      <td><img src="screenshots/catalog.png" width="200" alt="Catálogo"></td>
-      <td><img src="screenshots/course_detail.png" width="200" alt="Detalle del Curso"></td>
-    </tr>
-    <tr>
-      <td align="center"><b>Mis Cursos</b></td>
-      <td align="center"><b>Reproductor de Lección</b></td>
-      <td align="center"><b>Admin Dashboard</b></td>
-    </tr>
-    <tr>
-      <td><img src="screenshots/enrollments.png" width="200" alt="Mis Cursos"></td>
-      <td><img src="screenshots/lesson_viewer.png" width="200" alt="Reproductor de Lección"></td>
-      <td><img src="screenshots/admin_dashboard.png" width="200" alt="Admin Dashboard"></td>
-    </tr>
-  </table>
-</div>
 
 ---
 
